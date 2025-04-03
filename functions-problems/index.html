@@ -1,0 +1,38 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>javascript-problem1</title>
+</head>
+
+<body>
+    <script>
+        //Write a javascript function that accepts a string as a parameter 
+        //and returns the longest word. 
+
+        /*
+        1. Define a Javascript function that accepts a string as a parameter
+        2. Split the string and convert it into a variable called arrayOfWords
+        3. Defina the letter "i" as a variable and set the value to 0
+        4. Start the loop to navigate through array of words
+        5. Return the longest word
+        */
+       
+            function findLongestWord(str) {
+              let longestWord = "";
+              const arrayOfWords = str.split(" ");
+  
+              for(let i = 0; i < arrayOfWords.length ; i++) {
+                if(arrayOfWords[i].length > longestWord.length) {
+                  longestWord = arrayOfWords[i];
+                }
+              }
+  
+              return longestWord;
+            }
+
+            console.log(findLongestWord("I am the greatest"))
+    </script>
+</body>
+
+</html>
