@@ -1,0 +1,39 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>javascript-problem2</title>
+</head>
+
+<body>
+    <script>
+        /*
+      1. Define a Javascript function that accepts a string as a parameter
+      2. Define vowels as a variable and set the value to 0
+      3. Append vowels into a container and set values to "a,e,i,o,u"
+      4. Lowercase the string and split it into a variable called arrayOfLetters
+      5. Start the loop to navigate through array of letters
+      6. Use the include method to check the string of letters
+      7. Return number of vowels
+      */
+
+
+      function numberOfVowels(str){
+      let vowels = 0;
+      const arrayOfVowels = ["a","e","i","o","u"];
+      const arrayOfLetters = str.toLowerCase().split("");
+  
+      for(let n = 0 ; n < arrayOfLetters.length ; n++){
+      if(arrayOfVowels.includes(arrayOfLetters[n])){
+      vowels += 1;
+      }
+      }
+  
+      return vowels;
+      }
+      console.log(numberOfVowels("Can you see these vowels?"))
+
+    </script>
+</body>
+
+</html>
