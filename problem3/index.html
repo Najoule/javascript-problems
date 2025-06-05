@@ -1,0 +1,34 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>javascript-problem2</title>
+</head>
+
+<body>
+    <script>
+        /*
+      1. Define a Javascript function that accepts two arguments, a string and a letter
+      2. Define count as a variable and set the value to 0
+      3. Loop through each "n" in the input string
+      3. Check if the character of "n" is equal to the specified letter
+      7. Return count of occurences 
+      */
+
+
+    function letterCount(str, letter){
+        let count = 0;
+  
+        for(let n = 0; n < str.length ; n++){
+          if(str.charAt(n) == letter){
+            count += 1;
+          }
+        }
+        return count;
+      }
+        console.log(letterCount("Mississauga","s"))
+
+    </script>
+</body>
+
+</html>
