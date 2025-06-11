@@ -18,8 +18,9 @@
 
     function letterCount(str, letter){
         let count = 0;
+        const arrayOfLetters = str.toLowerCase();
   
-        for(let n = 0; n < str.length ; n++){
+        for(let n = 0; n < arrayOfLetters.length ; n++){
           if(str.charAt(n) == letter){
             count += 1;
           }
