@@ -17,17 +17,17 @@
 
 
     function letterCount(str, letter){
-        let count = 0;
-        const arrayOfLetters = str.toLowerCase();
+  let count = 0;
+  const  lowerCaseStr = str + letter.toLowerCase();
   
-        for(let n = 0; n < arrayOfLetters.length ; n++){
-          if(str.charAt(n) == letter){
-            count += 1;
-          }
-        }
-        return count;
-      }
-        console.log(letterCount("mississauga","s"))
+  for(let n = 0; n < lowerCaseStr.length ; n++){
+    if(str.charAt(n) === letter){
+      count += 1;
+    }
+  }
+    return count;
+}
+    console.log(letterCount("miSSissauga","s"))
 
     </script>
 </body>
