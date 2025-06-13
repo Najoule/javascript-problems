@@ -16,18 +16,18 @@
       */
 
 
-    function letterCount(str, letter){
+function letterCount(str, letter){
   let count = 0;
-  const  lowerCaseStr = str + letter.toLowerCase();
+  const  lowerCaseStr = str.toLowerCase();
   
   for(let n = 0; n < lowerCaseStr.length ; n++){
-    if(str.charAt(n) === letter){
+     if(lowerCaseStr.charAt(n) === letter.toLowerCase()){
       count += 1;
     }
   }
-    return count;
+   return count;
 }
-    console.log(letterCount("miSSissauga","s"))
+   console.log(letterCount("miSSissauga","s"))
 
     </script>
 </body>
