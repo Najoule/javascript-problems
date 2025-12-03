@@ -1,0 +1,22 @@
+Problem 3 
+function findLetterCount(str, letter){
+  let letterCount = 0;
+  const arrOfLetters = str.toLowerCase().split("");
+
+ /*Word Count
+    What: 0, exactly: 1, are: 2, we: 3, counting: 4 
+
+Letter “t” Count
+     What: 1, exactly: 1, are: 0, we: 0, counting: 1 
+     [1, 1, 1], the number of occurrences of the value t is 3.
+*/
+  
+  for(let i = 0; i < arrOfLetters.length; i++){
+    if(arrOfLetters[i].charAt() == letter){
+      letterCount += 1;
+    }
+  }
+  
+  return letterCount;
+}
+console.log(findLetterCount("What exactly are we counting?", "t"))
