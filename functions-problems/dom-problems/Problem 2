@@ -1,4 +1,12 @@
 Problem 2 
+
+/*Steps: 
+	1. Write a function that accepts a string as a parameter to count number of vowels
+ 	2. Declare and assign variables “let” & “const” to “vowelCount”, “arrayOfLetters” and “arrayOfVowels” 
+	4. Use a “for loop” to perform repeatedly over elements “arrayOfLetters.length”, “arrOfVowels” and “includes” method 
+	5. If statement is true, return vowel count*/ 
+
+
 function numberOfVowels(str, letter){
   let vowelCount = 0;
   const arrOfLetters = str.toLowerCase().split("");
