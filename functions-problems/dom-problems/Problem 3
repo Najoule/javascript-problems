@@ -1,4 +1,12 @@
 Problem 3 
+
+/*Steps: 
+	1. Write a function that accepts a string and letter as a parameter to count a specific letter
+ 	2. Declare and assign variables “let” & “const” to “letterCount” and “arrayOfLetters” 
+	4. Use a “for loop” to perform repeatedly over elements “arrayOfLetters.length” and method “charAt()” to find a specific letter and how many times it occurs 
+	5. If statement is true, return vowel count*/ 
+
+
 function findLetterCount(str, letter){
   let letterCount = 0;
   const arrOfLetters = str.toLowerCase().split("");
