@@ -6,6 +6,7 @@ Problem 1
 	4. Use a “for loop” to perform repeatedly over elements “arrayOfLetters.length”
 	5. If statement is true, return longest word*/ 
 
+
 function findTheLongestWord(str){
   let longestWord = ["Trying", "to", "find", "the", "longest", "word"];
   const arrayOfLetters = str.toLowerCase().split(" ");
