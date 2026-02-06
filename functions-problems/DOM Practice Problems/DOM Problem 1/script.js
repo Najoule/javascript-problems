@@ -6,20 +6,13 @@
 
 
 function findTheLongestWord(str){
-  let longestWord = ["Trying", "to", "find", "the", "longest", "word"];
-  const arrayOfLetters = str.toLowerCase().split(" ");
+  let longestWord = "";
+  const arrayOfWords = str.toLowerCase().split(" ");
   
-  /*
-  Word Count
-  Trying:0, to:1, find:2, the:3, longest:4, word:5
-  
-  Letter Count
-  Trying:5, to:1, find:3, the:2, longest:6, word:3*/
-  
-  for(let i = 0; i < arrayOfLetters.length; ++i){
-    if(arrayOfLetters[i].length > longestWord.length){
-      longestWord = arrayOfLetters[i];
-    }
+ for(let i = 0; i < arrayOfWords.length; i++){
+    if(arrayOfWords[i].length > longestWord.length){
+      longestWord = arrayOfWords[i];
+    }    
   }
   
   return longestWord;
