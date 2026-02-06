@@ -4,7 +4,6 @@
 	4. Use a “for loop” to perform repeatedly over elements “arrayOfLetters.length” and method “charAt()” to find a specific letter and how many times it occurs 
 	5. If statement is true, return vowel count*/ 
 
-
 function findLetterCount(str, letter){
   let letterCount = 0;
   const arrOfLetters = str.toLowerCase().split("");
