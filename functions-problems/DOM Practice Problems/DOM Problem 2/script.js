@@ -5,23 +5,17 @@
 	5. If statement is true, return vowel count*/ 
 
 
-function numberOfVowels(str, letter){
+function numberOfVowels(str){
   let vowelCount = 0;
   const arrOfLetters = str.toLowerCase().split("");
-  const arrOfVowels = ["a","e","i","o","u"];
-  
-  /*Word Count
-    Did: 0, we: 1, find: 2, the: 3 longest: 4 word: 5
-    
-    Vowel Count
-    Did: 1, we: 1, find: 1, the: 1, longest: 2, word: 1*/
+  const arrOfVowels = ["a","e","i","o","u","y"];
   
   for(let i = 0; i < arrOfLetters.length; i++){
     if(arrOfVowels.includes(arrOfLetters[i])){
       vowelCount += 1;
     }
   }
-  
+
   return vowelCount;
 }
-console.log(numberOfVowels("Did we find the longest word?"));
+console.log(numberOfVowels("Keep showing up Najoule"))
