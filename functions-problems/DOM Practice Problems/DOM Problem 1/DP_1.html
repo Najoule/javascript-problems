@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <!--1. Open up the p element to add an ID attribute with the value of green
+        2. This will allow us to change the element by ID-->
+    
+    <p id="green">I want to change the background color</p>
+    <button onclick="backGroundColor()">Change this background to GREEN</button>
+
+    <script>
+        function backGroundColor(){
+            let color = document.getElementById("green");
+            color.style.backgroundColor = "green";
+        }
+    </script>
+</body>
+</html>
