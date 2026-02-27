@@ -1,0 +1,23 @@
+<DOCTYPE html>
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>P element link</title>
+    </head>
+    <body>
+        
+        <p id="click">ESPN<a href="https://www.espn.com/"></a></p>
+
+        <button onclick="myLink()">Click the link</button>
+
+        <script>
+            function myLink(){
+                const hyperlink = document.getElementById("click").getAttribute('href');
+                document.getElementById("click").innerHTML = hyperlink;
+            }
+        </script>
+        
+    </body>
+    </html>
